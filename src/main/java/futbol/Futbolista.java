@@ -1,5 +1,6 @@
 package futbol;
-public abstract class Futbolista implements Comparable<Futbolista> {
+
+public abstract class Futbolista implements Comparable<Object> {
     private String nombre;
     private int edad;
     private String posicion;
@@ -39,6 +40,6 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 
     @Override
     public String toString() {
-        return "El Futbolista " + nombre +" tiene " + edad + ", y juego de " + posicion;
+        return "El Futbolista " + nombre + " tiene " + edad + ", y juego de " + posicion;
     }
 }
